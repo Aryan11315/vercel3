@@ -1,0 +1,69 @@
+/* General background for the whole page */
+.home-bg {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #f8f9fb 0%, #fafcff 100%);
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 68px 20px 68px;
+    background: rgba(255,255,255,0.86);
+    box-shadow: 0 2px 16px 0 rgba(60,60,100,0.03);
+    position: relative;
+    z-index: 10;
+}
+
+/* Logo text styling */
+.logo {
+    font-size: 2.1rem;
+    letter-spacing: 8px;
+    color: #2b313d;
+    font-weight: 300;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+}
+
+/* Navlinks container */
+.navlinks {
+    display: flex;
+    gap: 38px;
+}
+
+/* Individual nav link styling */
+.navlinks a {
+    font-size: 1.35rem;
+    color: #3e4852;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+}
+
+.navlinks a:hover {
+    color: #705ecc;
+    text-decoration: underline;
+}
+
+/* Responsive navbar (optional) */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 22px 12px 22px;
+    }
+    .logo {
+        font-size: 1.4rem;
+        letter-spacing: 4px;
+        margin-bottom: 18px;
+    }
+    .navlinks {
+        gap: 22px;
+    }
+    .navlinks a {
+        font-size: 1.07rem;
+    }
+}
